@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="surveyformfcc.css">
+    </head>
+    <body>
+        <div id="intro">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">*for choosing <u>Co-Curricular Activities</u> in St. Antony's School.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;Thank you for your valuable cooperation and support*<br><span id="smily">&#9786;</span><br><br>
+        <strong>Note: For classes 1 to 10 only</strong></p>
+        </div>
+        <form id="survey-form">
+            <h3><i>Personal Details</i></h3>
+            <label for="name" id="name-label"><h2>Name</h2></label>
+            <input type="text" id="name" name="personaldetails" placeholder="Name" class="box" required>
+            <label for="class" id="class-label"><h2>Class</h2></label>
+            <input type="number" id="class" name="personaldetails" min="1" max="10" class="box" placeholder="Class" required>
+            <label for="email" id="email-label"><h2>Email</h2></label>
+            <input type="email" id="email" name="personaldetails" placeholder="Email" class="box" required>
+            <label for="phone" id="phone-label"><h2>Phone Number</h2></label>
+            <input type="tel" id="phone" name="personaldetails" pattern="[0-9]{10}" class="box" placeholder="Phone No." required>
+            <label for="number" id="number-label"><h2>Age</h2></label>
+            <input type="number" id="number" name="personaldetails" min="6" max="15" class="box" placeholder="Age" required>
+            <label for="pincode" id="pincode-label"><h2>Pin Code</h2></label>
+            <input type="text" id="pincode" name="personaldetails" pattern="[0-9]{6}" maxlength="6" class="box" placeholder="Pin Code" required>
+            <hr><hr>
+            <h3><i>Co-Curricular Activities</i></h3>
+        <p>There are two sections, Indoor and Outdoor.</p>
+        <p><u>Choose the Co-Curricular Activity of your interest:</u> </p>
+        <select id="dropdown" name="activities">
+            <option value="indoor" selected disabled>Indoor</option>
+            <option value="drawing">Drawing</option>
+            <option value="englishliterature">English Literature</option>
+            <option value="malayalamliterature">Malayalam Literature</option>
+            <option value="painting">Painting</option>
+            <option value="piano">Piano</option>
+            <option value="guitar">Guitar</option>
+            <option value="violin">Violin</option>
+            <option value="drums">Drums</option>
+        </select>
+        <select class="dropdown2" id="dropdown" name="activities">
+            <option value="outdoor" selected disabled>Outdoor</option>
+            <option value="karate">Karate</option>
+            <option value="skating">Skating</option>
+            <option value="basketball">Basketball</option>
+            <option value="shooting">Shooting</option>
+            <option value="football">Football</option>
+            <option value="kungfu">Kung-Fu</option>
+            <option value="badminton">Badminton</option>
+            <option value="tennis">Tennis</option>
+        </select><br><hr>
+        <p><u>Choose the paying method:</u> </p>
+            <input class="radioclick" type="radio" id="fullinstallment" name="pay" value="fullinstallment(Rs.2000/-)">
+            <label id="full" for="fullinstallment">Full installment (Rs. 2000/-)</label><br><br>
+            <input class="radioclick" type="radio" id="halfinstallment" name="pay" value="halfinstallment(Rs.1000/-)">
+            <label id="half" for="halfinstallment">Half installment (Rs. 1000/-)</label><br><br>
+            <input class="radioclick" type="radio" id="monthlyinstallment" name="pay" value="monthlyinstallment(Rs.500/-)">
+            <label id="monthly" for="monthlyinstallment">Monthly installment (Rs. 200/-)</label><br><br>
+        <p><b>Note: </b>You can pay at school office, or by using <a title="Go to PayPal Official Site" id="link" href="https://www.paypal.com" target="_blank">PayPal</a></p><hr><hr>
+        <h3><i>Day and Time</i></h3>
+        <p><u>Choose the day(s) for Co-Curricular Activities:</u> </p>
+        <input class="form-checkbox" type="checkbox" id="monday" name="days" value="monday">
+        <label for="monday">Monday</label><br><br>
+        <input class="form-checkbox" type="checkbox" id="tuesday" name="days" value="tuesday">
+        <label for="tuesday">Tuesday</label><br><br>
+        <input class="form-checkbox" type="checkbox" id="wednesday" name="days" value="wednesday">
+        <label id="wed" for="wednesday">Wednesday</label><br><br>
+        <input class="form-checkbox" type="checkbox" id="thursday" name="days" value="thursday">
+        <label id="thurs" for="thursday">Thursday</label><br><br>
+        <input class="form-checkbox" type="checkbox" id="friday" name="days" value="friday">
+        <label id="fri" for="friday">Friday</label><br><br>
+        <p><b>Note: </b>You can also select all the days.</p><hr>
+        <p><u>Choose the time schedule:</u> </p>
+        <input class="radioclick" type="radio" id="time" name="time" value="330to430">
+        <label for="time">3.30pm - 4.30pm</label><br><br>
+        <input class="radioclick" type="radio" id="time" name="time" value="430to530">
+        <label for="time">4.30pm - 5.30pm</label><br><br>
+        <input class="radioclick" type="radio" id="time" name="time" value="530to630">
+        <label for="time">5.30pm - 6.30pm</label><br>
+        <p><b>Note:</b> Indian Standard Time (IST)</p><hr><hr>
+        <h3><i>Comments and Suggestions</i></h3>
+        <span id="downarrow">&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;&darr;</span><br><br>
+        <textarea name="comments" rows="20" cols="50" placeholder="Any comments or suggestions? Write it here..."></textarea><br><br>
+        <button class="twobtn" type="submit" id="submit">Submit</button><br>
+        <button class="twobtn" type="reset" id="reset">Reset</button><br>
+        </form>
+        <footer>&copy;<br>Copyrights reserved 2021.<br><br>
+        St. Antony's School<br>
+        #Learn, Master, Go ahead</footer>
+    </body>
+</html>
